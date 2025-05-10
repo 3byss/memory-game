@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Tuffy', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+span {
+    color: rgb(16, 156, 255);
+}
+
+#brain-icon {
+    width: 70px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.header {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* even columns */
+    gap: 30px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 27px;
+    width: 113px;
+    height: 200px;
+    background-color: rgba(236, 236, 236, 0.918);
+    border: 5px solid rgb(0, 0, 0);
+    box-shadow: 7px 7px 15px rgba(53, 53, 53, 0.811);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.card:hover {
+    background-color: rgb(255, 255, 255);
+    font-size: 34px;
+    box-shadow: 7px 7px 8px rgba(159, 159, 159, 0.756);
+}
