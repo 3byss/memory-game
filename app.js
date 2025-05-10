@@ -1,19 +1,27 @@
-import { randomNum } from './random.js';
+// Import all the files I need
+import { makeValues } from './javascripts/setValues.js';
+import { useTheData } from './javascripts/data.js';
 
 // Set basic variables
 let cards = document.querySelectorAll(".card");
-let usedNumbers = {};
 
-// Set cards values
-cards.forEach(element => {
-    let randomNumber = randomNum(3);
-    
-    // Check to see if we can add that number in
-    if (usedNumbers.length == 0) {
-        element.value = randomNumber;
-    } else if (usedNumbers.randomNumber == 2) {
-        element.value = randomNumber - 1;
-    }
-});
+// Main function
+function app() {
+    // Use functions from imports
+    makeValues(cards);
+    useTheData();
 
-console.log(cards);
+    // Add a click event listener
+    cards.forEach(element => {
+        console.log(element.classList);
+        element.addEventListener("click", () => {
+            return true;
+        });
+    });
+}
+
+// Call the main functions
+app();
+
+// Use in the data.js
+export { cards };
